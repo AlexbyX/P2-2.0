@@ -1,0 +1,94 @@
+{% extends "layout.html" %}
+{% block content %}
+<!-- Portfolio Grid-->
+<section class="page-section">
+    <div class="container" "bg-light">
+      <div class="text-center">
+        <h2 class="section-heading text-uppercase">Noticias Salvadoreñas</h2>
+        <h3 class="section-subheading text-muted">
+          periodicos digitales.
+        </h3>
+      </div>
+      <center>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <div class="card">
+            <a href="https://diario.elmundo.sv/"><img class="img-fluid" src="{{url_for('static', filename='img/noticias/1.jpg')}}" alt="..." /> </a>
+            <br>
+            <br>
+            <h2 class="section-heading text-uppercase"> <b>El mundo</b></h2>
+            <br>
+            
+          </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <a href="https://diarioelsalvador.com/"><img class="img-fluid" src="{{url_for('static', filename='img/noticias/2.jpg')}}" alt="..." /> </a>
+                <br>
+                <h2 class="section-heading text-uppercase"> <b> Diario El Salvador </b></h2>
+              </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <a href="https://www.laprensagrafica.com/"><img class="img-fluid" src="{{url_for('static', filename='img/noticias/3.jpg')}}" alt="..." /> </a>
+                <br>
+                <h2 class="section-heading text-uppercase"> <b>La Prensa Grafica </b></h2>
+              </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<section class="page-section bg-light">
+    <div class ="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Noticias Industriales</h2>
+        </div>
+<br>
+    <div class="row row-cols-1 row-cols-md-2">
+        <div class="col mb-4">
+          <div class="card">
+            <img src="{{url_for('static', filename='img/noticias/preso.jpg')}}" class="card-img-top" alt="...">
+            <div class="card-body">
+             <center> <h5 class="card-title">Extraditan a pandilleros MS “Manicomio” y “Midnight” a EE.UU. por homicidios</h5> </center>
+              <p class="card-text">El departamento de Justicia y el subsecretario de Asuntos del Hemisferio Occidental del Departamento de Estado de Estados Unidos, Brian Nichols, confirmaron la extradición de dos pandilleros salvadoreños de la MS-13 a ese país por los delitos de homicidios cometidos en territorio norteamericano.
+                Se trata de los pandilleros Edwin Mauricio Rodríguez Morales, alias “Manicomio”, quien es reclamado por un tribunal de Estados Unidos, acusado de cuatro homicidios y seis delitos más y de José Jonathan Guevara Castro, alias “Sospechoso o Midnight”, ambos de la Mara Salvatrucha.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card">
+            <img src="{{url_for('static', filename='img/noticias/arti.jpg')}}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <center><h5 class="card-title">El Ártico se calienta cuatro veces más rápido que el resto del planeta</h5></center>
+              <p class="card-text">
+                Hasta ahora los científicos calculaban que ese porcentaje superior de calentamiento, conocido como "amplificación ártica", era entre dos y tres veces mayor que en el resto del planeta.        
+                Esa había sido la conclusión del grupo de expertos del clima de la ONU (IPCC) en su último informe de 2019.
+                El Ártico se ha ido calentando 0.75ºC como media cada década, cuatro veces más que el resto del planeta, aseguran estos científicos en el estudio publicado en el portal científico Communications Earth&Environment.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card">
+            <img src="{{url_for('static', filename='img/noticias/cuba.jpg')}}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <center><h5 class="card-title">Sube a dos la cifra de bomberos fallecidos por incendio en Cuba</h5></center>
+              <p class="card-text">El ministro de Salud Pública, José Angel Portal Miranda, informó que en la noche del miércoles falleció el bombero Elier Correa, de 24 años, que se encontraba en estado crítico extremo, con quemaduras incompatibles con la vida, luego de atender la emergencia del incendio en la base petrolera de Matanzas, informó el medio Cubadebate.com.
+                La emisora local Radio 26 precisa que el joven bombero resultó lesionado en la explosión del primer tanque, el pasado 5 de agosto.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card">
+            <img src="{{url_for('static', filename='img/noticias/ener.jpg')}}" class="card-img-top" alt="...">
+            <div class="card-body">
+             <center> <h5 class="card-title">Fuentes renovables generaron el 71 % de la energía consumida a julio            </h5> </center>
+              <p class="card-text">El gerente de Energía de la Asociación Salvadoreña de Industriales (ASI), Javier González, aseguró que de enero a julio la energía renovable generada en el país representó un 71 % del consumo.
+                “En lo que va del año (...) la energía renovable ha representado el 71 % (de lo generado), el resto ha sido suplido con el gas natural, búnker y diésel”, informó el gerente de Energía.
+                González aseguró que el 2021 cerró con un 80 % de energía renovable suplida, entre las que se incluyen las fuentes hidroeléctricas, geotérmicas, fotovoltaicas, eólica y de biomasa.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+{% endblock %}

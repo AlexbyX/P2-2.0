@@ -1,0 +1,142 @@
+{% extends "layout.html" %}
+{% block content %}
+    <!-- Services-->
+<section class="page-section" id="services">
+
+    <div class="container">
+      <div class="text-center">
+        <h2 class="section-heading text-uppercase">Ventas</h2>
+        <h3 class="section-subheading text-muted">Links Direcctos</h3>
+    </div>
+        <div class="row text-center">
+            <div class="col-md-4">
+              <div class="card">
+                <img src="{{url_for('static', filename='img/icons/rtx3090ti.png')}}" class="card-img-top" alt="250">
+                <a href="https://www.amazon.com/GeForce-IceStorm-Advanced-Lighting-ZT-A30900J-10P/dp/B08ZL6XD9H/ref=sr_1_1_sspa?keywords=rtx+3090+ti&qid=1660227414&sprefix=rtx%2Caps%2C102&sr=8-1-spons&psc=1"> amazon.com</a>
+                <p>RTX 3090 ti</p>
+                <p><b>Precio: $1,184.16</b></p>
+              </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                  <img src="{{url_for('static', filename='img/icons/msi.png')}}" class="card-img-top" alt="250">
+                  <br>
+                  <br>
+                  <a href="https://www.amazon.com/-/es/Raider-GE77HX-12UGS-004-i7-12800HX-Windows/dp/B0B5182ZJV/ref=sr_1_3?keywords=laptop&qid=1660227760&sprefix=lap%2Caps%2C106&sr=8-3"> amazon.com</a>
+                  <p>Laptop MSI Raider GE77HX 12UGS-004</p>
+                  <p><b>Precio: $2,799.00</b></p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="{{url_for('static', filename='img/icons/lg.png')}}" class="card-img-top" alt="250">
+                  <a href="https://www.amazon.com/dp/B09XGXTXRB/ref=sspa_dk_detail_3?psc=1&pd_rd_i=B09XGXTXRB&pd_rd_w=Nz1Ct&content-id=amzn1.sym.3be1c5b9-5b41-4830-a902-fa8556c19eb5&pf_rd_p=3be1c5b9-5b41-4830-a902-fa8556c19eb5&pf_rd_r=5FVKDHK2HQWJJ9FZ831W&pd_rd_wg=Qyd8J&pd_rd_r=2e0eaeba-e3aa-45e1-a1ad-06a98bd29020&s=pc&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWw&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEySThONU5WSkhENkVQJmVuY3J5cHRlZElkPUExMDQ1NDA0MTFDTTVBVkNEOEsxWCZlbmNyeXB0ZWRBZElkPUEwMjk4MzQyMjI4UzFCRDRXNjdUSyZ3aWRnZXROYW1lPXNwX2RldGFpbCZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=">amazon.com</a>
+                  <p>LG gram (2022) 17Z90Q</p>
+                  <p><b>Precio: $1,899.99</b></p>
+                </div>
+              </div>
+          </div>
+        </div>
+    </div>
+</section>
+<section class="page-section bg-light" id="portfolio">
+  <div class="container">
+      <div class="text-center">
+          <h2 class="section-heading text-uppercase">Marcas</h2>
+          <h3 class="section-subheading text-muted">Negocios Electrnicos</h3>
+      </div>
+      <div class="row">
+          <div class="col-lg-4 col-sm-6 mb-4">
+              <!-- Portfolio item 1-->
+              <div class="portfolio-item">
+                  <a class="portfolio-link" data-bs-toggle="modal">
+                      <div class="portfolio-hover">
+                          <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                      </div>
+                      <a href="https://www.mi.com/global/product/redmi-smart-band-pro/"><img class="img-fluid" src="{{url_for('static', filename='img/portfolio/1.jpg')}}" alt="..." /> </a>
+  
+                  <div class="portfolio-caption">
+                      <div class="portfolio-caption-heading">Cuidado de la salud</div>
+                      <div class="portfolio-caption-subheading text-muted">Xiaomi</div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 mb-4">
+              <!-- Portfolio item 2-->
+              <div class="portfolio-item">
+                  <a class="portfolio-link" data-bs-toggle="modal">
+                      <div class="portfolio-hover">
+                          <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                      </div>
+                      <a href = "https://www.nike.com/w/mens-shoes-nik1zy7ok "><img class="img-fluid" src="{{url_for('static', filename='img/portfolio/2.jpg')}}" alt="..." /> </a>
+                  </a>
+                  <div class="portfolio-caption">
+                      <div class="portfolio-caption-heading">Explorador</div>
+                      <div class="portfolio-caption-subheading text-muted">Nike</div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 mb-4">
+              <!-- Portfolio item 3-->
+              <div class="portfolio-item">
+                  <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                      <div class="portfolio-hover">
+                          <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                      </div>
+                      <a href = "https://www.tesla.com/"><img class="img-fluid" src="{{url_for('static', filename='img/portfolio/3.jpg')}}" alt="..." /><a/>
+                  </a>
+                  <div class="portfolio-caption">
+                      <div class="portfolio-caption-heading">Vehiculos Electricos</div>
+                      <div class="portfolio-caption-subheading text-muted">Tesla</div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+              <!-- Portfolio item 4-->
+              <div class="portfolio-item">
+                  <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                      <div class="portfolio-hover">
+                          <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                      </div>
+                     <a href = "https://www.coca-cola.com/"> <img class="img-fluid" src="{{url_for('static', filename='img/portfolio/4.jpg')}}" alt="..." /> </a>
+                  </a>
+                  <div class="portfolio-caption">
+                      <div class="portfolio-caption-heading">Bebidas</div>
+                      <div class="portfolio-caption-subheading text-muted">Coca-cola</div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+              <!-- Portfolio item 5-->
+              <div class="portfolio-item">
+                  <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
+                      <div class="portfolio-hover">
+                          <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                      </div>
+                    <a href = "https://us.msi.com/">  <img class="img-fluid" src="{{url_for('static', filename='img/portfolio/5.jpg')}}" alt="..." /> </a>
+                  </a>
+                  <div class="portfolio-caption">
+                      <div class="portfolio-caption-heading">Gaming</div>
+                      <div class="portfolio-caption-subheading text-muted">MSI</div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+              <!-- Portfolio item 6-->
+              <div class="portfolio-item">
+                  <a data-bs-toggle="modal" class="portfolio-link"  >
+                      <div class="portfolio-hover">
+                          <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                      </div>
+                  <a href = "https://www.chanel.com/lx/?gclid=CjwKCAjw0dKXBhBPEiwA2bmObeiF-P9iNsqWdos63AxPOwi5AKQ_2geHXzWRPlKHT57jLWFLMDdd4BoCeyMQAvD_BwE"><img class="img-fluid" src="{{url_for('static', filename='img/portfolio/6.jpg')}}" alt="..." /> </a>
+                  </a>
+                  <div class="portfolio-caption">
+                      <div class="portfolio-caption-heading">Elegancia</div>
+                      <div class="portfolio-caption-subheading text-muted">Chanel</div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+{% endblock %}

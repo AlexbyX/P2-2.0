@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+{% block content %}
+<!-- About-->
+<section class="page-section" id="about">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">About Us</h2>
+            <h3 class="section-subheading text-muted">Mi primer pagina web con py and flask</h3>
+        </div>
+        <ul class="timeline">
+            <li>
+                <div class="timeline-image"><img class="rounded-circle img-fluid" src="{{url_for('static', filename='img/about/1.jpg')}}" alt="..." /></div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4>Julio 2022</h4>
+                        <h4 class="subheading">Maquetación de la página</h4>
+                    </div>
+                    <div class="timeline-body"><p class="text-muted">Inicio la planeación del proyecto, se maqueto en papel y se busco una plantilla base para sobre esta trabajar cada página</p></div>
+                </div>
+            </li>
+            <li class="timeline-inverted">
+                <div class="timeline-image"><img class="rounded-circle img-fluid" src="{{url_for('static', filename='img/about/2.jpg')}}" alt="..." /></div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4>Agosto 2022</h4>
+                        <h4 class="subheading">Desarrllo Web</h4>
+                    </div>
+                    <div class="timeline-body"><p class="text-muted">Se dio paso a la codificación en phyton y HTML5, utilzando el framework flask y plantillas de boostrap.</p></div>
+                </div>
+            </li>
+            <li class="timeline-inverted">
+                <div class="timeline-image"><img class="rounded-circle img-fluid" src="{{url_for('static', filename='img/about/4.jpg')}}" alt="..." /></div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4>Agosto 2022</h4>
+                        <h4 class="subheading">Presentación del Poryecto</h4>
+                    </div>
+                    <div class="timeline-body"><p class="text-muted">Se dio a conocer nuestra base del proyecto, esperando zacar la mayor puntucación y seguir mejorando a lo largo del curso</div>
+            </li>
+            <li class="timeline-inverted">
+                <div class="timeline-image">
+                    <h4>
+                        To be
+                        <br />
+                        <br />
+                        Continue!
+                    </h4>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+{% endblock %}
